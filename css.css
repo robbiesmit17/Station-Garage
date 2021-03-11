@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@media only screen and (max-width:1050px){ /*When the screen gets small*/
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: block;
+        }
+}
+@media only screen and (min-width:1050px){/*When the screen gets big*/
+    nav ul{
+        display: inherit !important;
+    }
+    .icon{
+    display: none;
+
+    }
+
+}
+
+
+
+.icon{
+    float:right ;
+
+}
+
+
+.logo{
+font-family: "ethnocentricregular";
+
+}
+
+nav{
+    background-color:#BF2A37;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;     
+    overflow: hidden;
+    width:fit-content;
+
+}
+nav ul li{
+    float: left;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+
+}
+
+nav ul li a:hover{
+    background-color: #A62E38;;
+}
+
+nav ul li a:visited{
+    color: white;
+}
+
+#navwrap{
+    width:fit-content;
+    display: flex;
+    margin: auto;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+body{
+    margin: 0px;
+}
+
+#wrapper{
+    width: 1000px;
+    height: 1000px;
+    background-color:hotpink ;
+    margin: auto;
+}
+footer{
+
+}
+@media only screen and (max-width: 1000px) {
+#wrapper{
+    width: 100%;
+}}
+.bigImage{
+    display: flex;
+    justify-content: center;
+    height:300px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.bigImage img{
+    flex:none;
+    height:600px;
+
+}
+.menuflex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.card{
+    border: 1px solid;
+    border-radius: 3px;
+    width: 35%;
+    height:600px;
+    background-color:white;
+    overflow: hidden;
+    padding: 1px;
+    justify-content: center;
+}
+.card img{
+    width: 100%;
+flex: none;
+}
+.cardImage{
+    height:300px;
+    overflow: hidden;
+}
+.widecard{
+    border: 1px solid;
+    border-radius: 3px;
+    width: 60%;
+    height:600px;
+    background-color:white;
+    overflow: hidden;
+padding: 1px;
+justify-content: center;
+
+}
+.widecard img{
+    width: 100%;
+flex: none;
+transform: translate(0px,-200px);
+}
+.WidecardImage{
+    height:400px;
+    overflow: hidden;
+}
+.links{
+    display:block;
+}
+
+
+p{
+    float: right;
+}
