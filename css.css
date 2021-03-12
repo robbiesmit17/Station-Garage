@@ -11,14 +11,19 @@
 @media only screen and (max-width:1050px){ /*When the screen gets small*/
     nav ul{
         display: none;
+        width: 100% !important;/*Makes the links bigger for phones*/
     }
     .icon{
         display: block;
         }
+    #navwrap{
+        display: block  !important;/*Ensures new line between logo and links*/
+    }
 }
 @media only screen and (min-width:1050px){/*When the screen gets big*/
     nav ul{
         display: inherit !important;
+
     }
     .icon{
     display: none;
