@@ -11,13 +11,14 @@
 @media only screen and (max-width:1050px){ /*When the screen gets small*/
     nav ul{
         display: none;
-        width: 100% !important;/*Makes the links bigger for phones*/
+        width: 100% !important;/*Makes the links wider for phones*/
     }
     .icon{
         display: block;
         }
     #navwrap{
         display: block  !important;/*Ensures new line between logo and links*/
+        width:100% !important;   /*Makes the links wider for phones*/
     }
 }
 @media only screen and (min-width:1050px){/*When the screen gets big*/
@@ -30,9 +31,27 @@
 
     }
 
+
 }
 
+@media only screen and (max-width:650px){ /*When the screen gets smaller*/
+.card{
+    width: 100%!important;
+}
+.widecard{
+    width: 100%!important;
+}
 
+ 
+.bigImage {
+    height: 300px !important;
+} 
+}
+
+@media only screen and (max-width: 1000px) {
+    #wrapper{
+        width: 100%;
+    }}
 
 .icon{
     float:right ;
@@ -74,11 +93,11 @@ nav a{
 
 }
 
-nav ul li a:hover{
+nav a:hover{
     background-color: #A62E38;;
 }
 
-nav ul li a:visited{
+nav a:visited{
     color: white;
 }
 
@@ -100,32 +119,34 @@ nav ul li a:visited{
 
 body{
     margin: 0px;
+    /*background-color: #A62E38;*/
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrapper{
-    width: 1000px;
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 1000px;
-    background-color:hotpink ;
+    background-color:#fff ;
     margin: auto;
+    padding-top: 10px;
+  /*  -webkit-box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);
+box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);  After researching similar websites, a different style has been chosen.  */
 }
-footer{
 
-}
-@media only screen and (max-width: 1000px) {
-#wrapper{
-    width: 100%;
-}}
 .bigImage{
     display: flex;
     justify-content: center;
-    height:300px;
+    height:390px;
     overflow: hidden;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 .bigImage img{
     flex:none;
-    height:600px;
+    height: 208%;
+    transform: translate(0px, -40px);
 
 }
 .menuflex{
@@ -179,6 +200,34 @@ transform: translate(0px,-200px);
 }
 
 
-p{
-    float: right;
+footer{
+    width: 100%;
+    height: auto;
+    background-color:darkgray;
+    padding: 10px 0 10px 0;
+}
+
+footer div{
+    height: inherit;
+    text-align: center;
+    
+}
+footer p{
+    margin: 1px;
+}
+.col1 {width: 8.33%;}
+.col2 {width: 16.66%;}
+.col3 {width: 25%;}
+.col4 {width: 33.33%;}
+.col5 {width: 41.66%;}
+.col6 {width: 50%;}
+.col7 {width: 58.33%;}
+.col8 {width: 66.66%;}
+.col9 {width: 75%;}
+.col10 {width: 83.33%;}
+.col11 {width: 91.66%;}
+.col12 {width: 100%;}
+
+h1{
+    font-weight: 300;
 }
