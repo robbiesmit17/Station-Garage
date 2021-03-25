@@ -43,7 +43,18 @@
  
 .bigImage {
     height: 300px !important;
-} 
+}
+
+.menuflex{
+    display: block !important;
+}
+.col6{
+    width: 100% !important;
+}
+.itemCol{
+    width: 100% !important;
+}
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -131,9 +142,6 @@ body{
     background-color:#fff ;
     margin: auto;
     padding-top: 10px;
-  /*  -webkit-box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);
-box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);  After researching similar websites, a different style has been chosen.  */
 }
 
 .bigImage{
@@ -146,7 +154,6 @@ box-shadow: 1px 35px 49px 7px rgba(0,0,0,0.75);  After researching similar websi
     flex:none;
     height: 208%;
     transform: translate(0px, -40px);
-
 }
 .menuflex{
     display:flex;
@@ -203,7 +210,7 @@ footer{
     width: 100%;
     height: auto;
     background-color:#232628;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 10px 0;
     display: flex;
     color: #fff;
 }
@@ -231,7 +238,9 @@ background-color: #3d4144;
 .col3 {width: 25%;}
 .col4 {width: 33.33%;}
 .col5 {width: 41.66%;}
-.col6 {width: 50%;}
+.col6 {width: 50%;
+/* min-width: 300px; */
+}
 .col7 {width: 58.33%;}
 .col8 {width: 66.66%;}
 .col9 {width: 75%;}
@@ -246,4 +255,33 @@ font-weight: 200;
 }
 h1{
     font-weight: 300;
+}
+
+.itemCol{
+width: 50%;
+height: 15px;
+background-color: ;
+min-width: 300px;
+height: 300px;
+}
+.itemRow{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.smallImage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+}
+.smallImage img{
+    flex:none;
+    width: 100%;
+    height: fit-content;
+
+    /* height: 208%; */
+    /* transform: translate(0px, -40px); */
 }
