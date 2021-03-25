@@ -30,8 +30,6 @@
     display: none;
 
     }
-
-
 }
 
 @media only screen and (max-width:650px){ /*When the screen gets smaller*/
@@ -50,8 +48,10 @@
 
 @media only screen and (max-width: 1000px) {
     #wrapper{
-        width: 100% !important;
-    }}
+        width: calc(100% - 10px) !important;
+        padding: 0px !important;
+    }
+}
 
 .icon{
     float:right ;
@@ -128,7 +128,6 @@ body{
     width: 980px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 1000px;
     background-color:#fff ;
     margin: auto;
     padding-top: 10px;
