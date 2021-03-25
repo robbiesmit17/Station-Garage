@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 1000px) {
     #wrapper{
-        width: 100%;
+        width: 100% !important;
     }}
 
 .icon{
@@ -203,17 +203,29 @@ transform: translate(0px,-200px);
 footer{
     width: 100%;
     height: auto;
-    background-color:darkgray;
+    background-color:#232628;
     padding: 10px 0 10px 0;
+    display: flex;
+    color: #fff;
 }
 
 footer div{
     height: inherit;
-    text-align: center;
     
 }
 footer p{
     margin: 1px;
+}
+.footTextBold{
+    font-weight: 500;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+footer a:hover{
+background-color: #3d4144;
 }
 .col1 {width: 8.33%;}
 .col2 {width: 16.66%;}
@@ -228,6 +240,11 @@ footer p{
 .col11 {width: 91.66%;}
 .col12 {width: 100%;}
 
+.footText{
+width: fit-content;
+margin: auto;
+font-weight: 200;
+}
 h1{
     font-weight: 300;
 }
