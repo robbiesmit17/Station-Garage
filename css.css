@@ -267,6 +267,7 @@ height: 300px;
 .itemRow{
     display: flex;
     flex-wrap: wrap;
+    min-height: 20px;
    
 }
 
@@ -284,4 +285,8 @@ height: 300px;
 
     /* height: 208%; */
     /* transform: translate(0px, -40px); */
+}
+
+.itemColText{
+    padding: 20px;
 }
