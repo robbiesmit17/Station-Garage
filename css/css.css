@@ -280,13 +280,8 @@ height: 300px;
 }
 .smallImage img{
     flex:none;
-    width: 100%;
-    height: fit-content;
-
-    /* height: 208%; */
-    /* transform: translate(0px, -40px); */
+    
 }
-
 .itemColText{
     padding: 20px;
 }
