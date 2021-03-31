@@ -1,124 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- This site uses version control and is found at. https://github.com/robbiesmit17/Station-Garage -->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Station Garage - Homepage</title>
   <link rel="stylesheet" href="css/css.css">
-  <script src="js/script.js"></script>
+  <script src="js/script.js"></script><!--Burger menu script-->>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"><!--Roboto-->>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Used for burger menu icon and facebook icon-->>
 </head>
 
 <body>
-  <nav>
-    <div id="navwrap">
-      <a class=logo href="index.html">STATION GARAGE</a>
-      <ul id="links">
-        <li><a href="deals.html">Deals</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="Burger()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-
-
-  <div class="bigImage">
-    <img src="images/main.jpg" alt="Image of the station garage forcourt on a sunny day">
-  </div>
-
-
-  <div id="wrapper">
-
-    <h1>Welcome to station garage</h1>
-    <p>Station Garage is the number one independent petrol station in the south of the island. </p>
-
-
-    <div id="3itemwrap">
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="smallImage">
-            <img src="images/wash.jpg" alt="">
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="itemColText">
-            We offer a wide range of services for both you and your vehicle.
-            <ul>
-              <li>High-tech Karcher Car Wash</li>
-              <li>Free AirLine</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-            </ul>
-          </div>
-        </div>
+  <header>
+    <nav>
+      <div id="navwrap">
+        <a class=logo href="index.html">STATION GARAGE</a>
+        <ul id="links">
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <a href="javascript:void(0);" class="icon" onclick="Burger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  <main>
 
-      <div class="itemRow"></div>
-
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="itemColText">
-            Self Care
-            <ul>
-
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-            </ul>
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="smallImage">
-            <img src="images/boss.jpg" alt="Happy Michael Owen Face">
-          </div>
-        </div>
-      </div>
-
-      <div class="itemRow"></div>
-
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="smallImage">
-            <img src="images/logog.png" alt="">
-
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="itemColText">
-            Service
-            <ul>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-              <li>Service</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+    <div class="bigImage">
+      <img src="images/main.jpg" alt="Image of the station garage forcourt on a sunny day">
     </div>
 
 
+    <div id="wrapper">
 
-    <p>This site is under development. All content is just filler</p>
+      <h1>Welcome to station garage</h1>
+      <p>Station Garage is the number one independent petrol station in the south of the island. </p>
 
-  </div>
 
+      <div id="3itemwrap">
+        <div class="itemRow hover">
+          <a href="services.html" class="largeLink">
+            <div class="itemCol">
+              <div class="smallImage">
+                <img src="images/wash.jpg" alt="Image of the station garage drive through car wash from the front">
+              </div>
+            </div>
+            <div class="itemCol">
+              <div class="itemColText">
+                <h2>Services</h2>
+                <p>We offer a large range of services, including but not limited to:</p>
+                <ul>
+                  <li>High-tech Karcher Car Wash</li>
+                  <li>Free AirLine</li>
+                  <li>Handheld Jetwash</li>
+                  <li>Car Vacuum</li>
+                  <li>Coffee Machine</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="itemRow"></div>
+
+        <div class="itemRow hover">
+          <a href="aboutus.html" class="largeLink">
+            <div class="itemCol">
+              <div class="itemColText">
+                <h2>Staff</h2>
+                <p>Our staff don't bite. Click to learn more about our key members of staff.</p>
+
+              </div>
+            </div>
+            <div class="itemCol">
+              <div class="smallImage">
+                <img src="images/boss.jpg" alt="Michael Owen holding his left arm up">
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="itemRow"></div>
+
+        <div class="itemRow hover">
+          <a href="contact.html" class="largeLink">
+            <div class="itemCol">
+              <div class="smallImage">
+                <img src="images/logog.png" alt="Station garage logo in the style of a petrol pump">
+
+              </div>
+            </div>
+
+            <div class="itemCol">
+              <div class="itemColText">
+                <h2>Contact</h2>
+                <p>We love answering queries, however minor they may be. Click to find our contact information.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
 
   <footer>
     <div class="col4">

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Station Garage - Homepage</title>
+  <title>Station Garage - About us</title>
   <link rel="stylesheet" href="css/css.css">
   <script src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,85 +13,93 @@
 </head>
 
 <body>
-  <nav>
-    <div id="navwrap">
-      <a class=logo href="index.html">STATION GARAGE</a>
-      <ul id="links">
-        <li><a href="deals.html">Deals</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header>
+    <nav>
+      <div id="navwrap">
+        <a class=logo href="index.html">STATION GARAGE</a>
+        <ul id="links">
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="Burger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+
+
+  <main>
+    <div id="wrapper">
+      <h1>About us</h1>
+      <p>We are an independent, family-owned petrol station serving Castletown and the south of the Isle of Man. Below
+        you
+        can meet some of our team and see what they get up to.</p>
+
+      <div id="3itemwrap">
+        <div class="itemRow"></div>
+        <div class="itemRow">
+          <div class="itemCol">
+            <div class="smallImage">
+              <img class="height" src="images/boss.jpg" alt="wide photo of Michael Owen while trials marshalling">
+            </div>
+          </div>
+          <div class="itemCol">
+            <div class="itemColText">
+              <h2>Michael Owen (Mo)</h2>
+              <p>Mo is the boss of the Garage. He is responsible for driving business decisions and assisting the shop
+                manager in her duties. </p>
+              <p>In his free time he supports the garage-sponsored trials bike team.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="itemRow"></div>
+
+        <div class="itemRow">
+          <div class="itemCol">
+            <div class="smallImage">
+              <img src="images/voirrey.jpg" alt="close-up photo of voirrey, shop manager">
+
+            </div>
+          </div>
+          <div class="itemCol">
+            <div class="itemColText">
+              <h2>Voirrey</h2>
+              <p>Voirrey is the shop manager. She controls the day to day and week to week operations of the shop. This
+                includes product ordering and processing.</p>
+              <p>In her free time, Voirrey likes to work in her garden. She is also training for the Parish Walk as part
+                of the Station Garage team.</p>
+            </div>
+          </div>
+        </div>
+        <div class="itemRow"></div>
+        <div class="itemRow">
+          <div class="itemCol">
+            <div class="smallImage">
+              <img src="images/dog.jpg" alt="photo of buddy, a brown terrier-dashchund mix. Photo taken on grass at Langness.">
+            </div>
+          </div>
+          <div class="itemCol">
+            <div class="itemColText">
+              <h2>Buddy</h2>
+              <p>Buddy is one of our bestest staff members. He comes to the shop every day and focuses on emotional
+                support for all of our team.</p>
+              <p>If you want to say hi to him, just ask!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="itemRow"></div>
+
+      </div>
+
+
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="Burger()">
-      <i class="fa fa-bars"></i>
-    </a>
-
-  </nav>
-
-  <div id="wrapper">
-    <h1>About us</h1>
-    <p>We are an independent, family-owned petrol station serving Castletown and the south of the Isle of Man. Below you can meet some of our team and see what they get up to.</p>
-
-    <div id="3itemwrap">
-      <div class="itemRow"></div>
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="smallImage">
-            <img class="height" src="images/boss.jpg" alt="wide photo of Michael Owen while trials marshalling">
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="itemColText">
-   <h2>Michael Owen (Mo)</h2>
-   <p>Mo is the boss of the Garage. He is responsible for driving business decisions and assisting the shop manager in her duties. </p>
-   <p>In his free time he supports the garage-sponsored trials bike team.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="itemRow"></div>
-
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="smallImage">
-            <img src="images/voirrey.jpg" alt="close-up photo of voirrey, shop manager">
-
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="itemColText">
-            <h2>Voirrey</h2>
-            <p>Voirrey is the shop manager. She controls the day to day and week to week operations of the shop. This includes product ordering and processing.</p>
-            <p>In her free time, Voirrey likes to work in her garden. She is also training for the Parish Walk as part of the Station Garage team.</p>
-          </div>
-        </div>
-      </div>
-      <div class="itemRow"></div>
-      <div class="itemRow">
-        <div class="itemCol">
-          <div class="smallImage">
-            <img src="images/dog.jpg" alt="">
-          </div>
-        </div>
-        <div class="itemCol">
-          <div class="itemColText">
-            <h2>Buddy</h2>
-            <p>Buddy is one of our bestest staff members. He comes to the shop every day and focuses on emotional
-              support for all of our team.</p>
-            <p>If you want to say hi to him, just ask!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="itemRow"></div>
-
-    </div>
-
-
-  </div>
-
+  </main>
 
   <footer>
     <div class="col4">

@@ -1,10 +1,9 @@
-@font-face {
+@font-face {/* logo font */
     font-family: 'ethnocentricregular';
     src: url('../fonts/ethnocentric_rg-webfont.woff2') format('woff2'),
          url('../fonts/ethnocentric_rg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -40,37 +39,29 @@
     width: 100%!important;
 }
 
- 
-.bigImage {
+.bigImage {/* the large banner image*/
     height: 300px !important;
 }
-
-.menuflex{
-    display: block !important;
-}
-.col6{
-    width: 100% !important;
-}
-.itemCol{
+.itemCol{/*Part of a responsive 2 col design*/
     width: 100% !important;
 }
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {/*Makes the wrapper responsive*/
     #wrapper{
         width: calc(100% - 10px) !important;
         padding: 0px !important;
     }
 }
 
-.icon{
+.icon{/*Burger menu*/
     float:right ;
 
 }
 
 
-.logo{
+.logo{/*logo text*/
 font-family: "ethnocentricregular";
 
 }
@@ -94,9 +85,10 @@ nav ul{
 nav ul li{
     float: left;
 }
-
-nav a{
+a{/*Removes underlines from all links*/
     text-decoration: none;
+}
+nav a{
     display: block;
     color: white;
     text-align: center;
@@ -130,7 +122,6 @@ nav a:visited{
 
 body{
     margin: 0px;
-    /*background-color: #A62E38;*/
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -144,16 +135,16 @@ body{
     padding-top: 10px;
 }
 
-.bigImage{
+.bigImage{/*large banner image container*/
     display: flex;
     justify-content: center;
     height:390px;
     overflow: hidden;
 }
-.bigImage img{
+.bigImage img{/*the image itself*/
     flex:none;
     height: 208%;
-    transform: translate(0px, -40px);
+    transform: translate(0px, -40px);/*centers the image*/
 }
 .menuflex{
     display:flex;
@@ -163,44 +154,6 @@ body{
     margin-top: 5px;
 }
 
-.card{
-    border: 1px solid;
-    border-radius: 3px;
-    width: 35%;
-    height:600px;
-    background-color:white;
-    overflow: hidden;
-    padding: 1px;
-    justify-content: center;
-}
-.card img{
-    width: 100%;
-flex: none;
-}
-.cardImage{
-    height:300px;
-    overflow: hidden;
-}
-.widecard{
-    border: 1px solid;
-    border-radius: 3px;
-    width: 60%;
-    height:600px;
-    background-color:white;
-    overflow: hidden;
-padding: 1px;
-justify-content: center;
-
-}
-.widecard img{
-    width: 100%;
-flex: none;
-transform: translate(0px,-200px);
-}
-.WidecardImage{
-    height:400px;
-    overflow: hidden;
-}
 .links{
     display:block;
 }
@@ -226,7 +179,6 @@ footer p{
     font-weight: 500;
 }
 footer a{
-    text-decoration: none;
     color: #fff;
     font-weight: 200;
 }
@@ -238,9 +190,7 @@ background-color: #3d4144;
 .col3 {width: 25%;}
 .col4 {width: 33.33%;}
 .col5 {width: 41.66%;}
-.col6 {width: 50%;
-/* min-width: 300px; */
-}
+.col6 {width: 50%;}
 .col7 {width: 58.33%;}
 .col8 {width: 66.66%;}
 .col9 {width: 75%;}
@@ -270,8 +220,11 @@ height: 300px;
     min-height: 20px;
    
 }
+.hover:hover{
+    background-color: #f2f2f2;
+}
 
-.smallImage{
+.smallImage{/*small images*/
     display: flex;
     justify-content: center;
     width: 100%;
@@ -297,4 +250,17 @@ height: 300px;
     background: none !important;
     height: 500px;
     width: 100%;
+}
+.largeLink{/*the large clickable links on the homepage*/
+    display: contents;
+    
+}
+.largeLink:visited{
+    color: #000;
+}
+.list li{
+    padding: 5px 0px 5px 0px;
+}
+.fa-facebook-official{
+    color:#4267B2 ;
 }
